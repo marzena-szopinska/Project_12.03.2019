@@ -5,7 +5,7 @@
 }
 
 body {
-  color: #999;
+  color: #666;
   font: normal 1rem/1.5 'Lato', sans-serif;
   letter-spacing: 1;
   text-align: left;
@@ -109,6 +109,12 @@ footer {
 }
 
 @media (min-width: 768px) {
+
+  header h1 {
+    width: 50%;
+    margin: 2rem auto;
+  }
+
   img {
     width: 400px;
     height: 400px;
@@ -135,14 +141,14 @@ footer {
 
   .box:first-of-type {
     float: left;
-    padding-right: .75rem;
+    padding-right: .85rem;
     border-right: 1px solid rgb(146, 123, 193);
   }
 
   .box:last-of-type {
     padding-top: 0;
     float: right;
-    padding-left: .75rem;
+    padding-left: .85rem;
   }
 
   img {
@@ -154,6 +160,16 @@ footer {
 
   .container {
     width: 80%;
+  }
+
+  /* make the footer to stick to the bottom */
+  .wrapper {
+    min-height: 91%;
+  }
+
+  footer {
+    height: 90px;
+    padding-top: 1.85rem;
   }
 
 }
