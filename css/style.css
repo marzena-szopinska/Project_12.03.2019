@@ -7,8 +7,73 @@
 body {
   color: #999;
   font: normal 1rem/1.5 'Lato', sans-serif;
+  letter-spacing: 1;
+  text-align: left;
+  background-color: #fff;
 }
 
-p {
-  -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0, 1), rgba(0,0,0,.5) 50%, rgba(0,0,0, 1));
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+ul li {
+  width: 100%;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(146, 123, 193);
+  border-top: 1px solid rgb(146, 123, 193);
+  background: linear-gradient(to right, rgba(146, 123, 193, .3), transparent 90%);
+}
+
+.container {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+h1, h2 {
+  text-shadow: 2px 2px 5px rgb(146, 123, 193);
+}
+
+header h1 {
+  font-family: 'Lilita One', cursive;
+  font-size: 3rem;
+  text-shadow: none;
+  text-align: center;
+}
+
+h1 span {
+  color: rgb(146, 123, 193);
+
+}
+
+small {
+  color: rgb(146, 123, 193);
+}
+
+.box {
+  margin-bottom: 2rem;
+}
+
+.box p::first-letter {
+  font-size: 1.45rem;
+  font-weight: 900;
+  /* gradient text
+  -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0, 1), rgba(0,0,0,.5) 50%, rgba(0,0,0, 1));*/
+}
+
+footer {
+  border-top: 1px solid rgb(146, 123, 193);
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: linear-gradient(to right, rgba(146, 123, 193, .3), transparent 90%);
 }
