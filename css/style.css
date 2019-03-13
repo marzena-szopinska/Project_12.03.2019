@@ -13,7 +13,16 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display:block;
+  margin: 0 auto;
+  -webkit-clip-path: polygon(0% 15%, 23% 22%, 15% 0%, 85% 0%, 73% 21%, 100% 15%, 100% 85%, 77% 81%, 85% 100%, 15% 100%, 24% 81%, 0% 85%);
+  clip-path: polygon(0% 15%, 23% 22%, 15% 0%, 85% 0%, 73% 21%, 100% 15%, 100% 85%, 77% 81%, 85% 100%, 15% 100%, 24% 81%, 0% 85%);
+  -webkit-box-shadow: 4px 3px 84px 7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 3px 84px 7px rgba(0,0,0,0.75);
+  box-shadow: 4px 3px 84px 7px rgba(0,0,0,0.75);
 }
 
 ul {
@@ -24,14 +33,13 @@ ul {
 
 ul li {
   width: 100%;
+  font-weight: 100;
   padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 4rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid rgb(146, 123, 193);
-  border-top: 1px solid rgb(146, 123, 193);
   background: linear-gradient(to right, rgba(146, 123, 193, .3), transparent 90%);
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -44,15 +52,19 @@ h1, h2 {
 }
 
 header h1 {
-  font-family: 'Lilita One', cursive;
   font-size: 3rem;
+  font-weight: 100;
   text-shadow: none;
   text-align: center;
+  transition: transform .3s ease-out;
+}
+
+header h1:hover {
+  transform: rotate(5deg);
 }
 
 h1 span {
   color: rgb(146, 123, 193);
-
 }
 
 small {
@@ -68,6 +80,19 @@ small {
   font-weight: 900;
   /* gradient text
   -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0, 1), rgba(0,0,0,.5) 50%, rgba(0,0,0, 1));*/
+}
+
+.box:last-of-type {
+  padding-top: 1rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, rgb(146, 123, 193), #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, rgb(146, 123, 193), #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, rgb(146, 123, 193), #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, rgb(146, 123, 193), #f0f0f0);
 }
 
 footer {
