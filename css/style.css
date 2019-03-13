@@ -48,7 +48,7 @@ ul li {
   padding: 1rem 1rem;
 }
 
-h1, h2 {
+h2 {
   text-shadow: 2px 2px 5px rgb(146, 123, 193);
 }
 
@@ -79,8 +79,6 @@ small {
 .box p::first-letter {
   font-size: 1.45rem;
   font-weight: 900;
-  /* gradient text
-  -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0, 1), rgba(0,0,0,.5) 50%, rgba(0,0,0, 1));*/
 }
 
 .box:last-of-type {
@@ -102,4 +100,60 @@ footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background: linear-gradient(to right, rgba(146, 123, 193, .3), transparent 90%);
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  .box {
+    text-align: center;
+    width: 50%;
+    margin-top: 50px;
+  }
+
+  .box:first-of-type {
+    float: left;
+    padding-right: .75rem;
+    border-right: 1px solid rgb(146, 123, 193);
+  }
+
+  .box:last-of-type {
+    padding-top: 0;
+    float: right;
+    padding-left: .75rem;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 1rem;
+  }
+
+  .container {
+    width: 80%;
+  }
+
 }
